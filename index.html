@@ -11,9 +11,34 @@
     </h1>
     <section id="formulaire">
       <form method="get" action="https://www.google.fr/search">
-        <input id="get-search" type="text" name="q">
+        <!--
+          On vois bien que la balise disparait, et lorsqu'on fait une recherche ya deja la valeur
+          <input type="hidden" name="q" value="site:w3schools.com" >
+        -->
+        <input id="get-search" type="text" name="q" placeholder="Rechercher" pattern=".*(HTML|CSS)+.*" >
+        <br/>
+        <input type="checkbox" id="apple" name="q" value="Apple">
+        <label for="apple">Apple</label>
+        <input type="checkbox" id="pear" name="q" value="Pear">
+        <label for="pear">Pear</label>
+        <input type="checkbox" id="banana" name="q" value="Banana">
+        <label for="banana">Banana</label>  
+        <br/>
+        <input type="radio" id="french" name="hl" value="fr">
+        <label for="french">French</label>
+        <input type="radio" id="english" name="hl" value="en">
+        <label for="english">English</label>
+        <br/>
+        <select name="q">
+          <option value="Mango" selected>Mango</option>
+          <option value="Orange">Orange</option>
+          <option value="Fraise">Fraise</option>
+          <option value="Jojo">Jojo</option>
+        </select>
+        <br/>
         <input type="submit" value="Chercher">
       </form>
+
     </section>
     <section id="personal-data">
       <figure id="photomgl">
